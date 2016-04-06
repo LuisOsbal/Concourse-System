@@ -7,5 +7,10 @@ section(class="Login")
 				form(action="dashboard.html", class="Login-form", method="post", runat="server")
 					input(type="text", class="Login-inputText form-control input-lg", placeholder="Email")
 					input(type="password", class="Login-inputText form-control input-lg", placeholder="Password")
-					button(class="Login-button") Continuar
+					select(class="Login-select.form-control.input-lg")
+						option Empresa
+						option Bosques de tepepan
+						option ME48
+						option Ventana Polanco
+					button(class="Login-button btn-danger") Continuar
 					label(class="Login-labelError")

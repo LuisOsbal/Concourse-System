@@ -1,0 +1,20 @@
+section(id="contact", class="Contact")
+	div(class="Contact-container")
+		div(class="Contact-images")
+	div(class="Contact-containerForm")
+		h3(class="Contact-title afterLineDecoration") DÉJANOS TUS DATOS
+		p(class="Contact-paragraph") ¿Te gustaría formar parte de nuestros provedores? Déjanos tus datos y con gusto te atenderemos.
+			form(action="register.php", method="post", class="Contact-contactForm")
+				label(class="Contact-label") nombre / razón social
+				input(id="name", name="name", type="text", class="Contact-contactInput", required)
+				label(class="Contact-label") correo electrónico
+				input(id="email", name="email", type="email", class="Contact-contactInput",  required)
+				label(class="Contact-label") contraseña
+				input(id="passRegister", name="passRegister", type="password", maxlength="10", class="Contact-contactInput",  required)
+				//- label(class="Contact-label") confirmar contraseña
+				//- input(id="passConfirmation", name="passConfirmation", type="password", maxlength="10,class="Contact-contactInput",  required)
+				label(class="Contact-label") teléfono
+				input(id="phone", name="phone", type="number", minlength="0", class="Contact-contactInput", required)
+				label(class="Contact-label") mensaje
+				textarea(id="message", name="message", class="Contact-contactArea")
+				button(type="submit", class="Contact-contactButton") Enviar

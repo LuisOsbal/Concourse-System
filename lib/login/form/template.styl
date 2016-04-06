@@ -29,21 +29,21 @@
 		color default
 	&-inputText
 		margin-top .5em
+	&-select
+		width 100%
+		margin-top .5em
 	&-button
 		width 100%
 		height 2.5em
 		margin 1.5em 0 0 0
-		background primary
+		background danger
 		color default
 		font-weight 400
 		font-size 1.2em
 		border-radius .5em
 		border 1px solid transparent
-		border-bottom 5px solid primaryBorder
+		border-bottom 5px solid dangerBorder
 		outline primaryBorder
-		&:hover
-			background success
-			border-bottom 5px solid successBorder
 	&-labelError
 		display block
 		text-align center
@@ -51,6 +51,8 @@
 		width 100%
 		color danger
 		font-size 1.1em
+
+
 @media screen and (min-width 320px)
 	.Login
 		&-container
