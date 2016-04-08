@@ -7,10 +7,17 @@ section(id="contact", class="Contact")
 			form(action="register.php", method="post", class="Contact-contactForm")
 				label(class="Contact-label") nombre / razón social
 				input(id="name", name="name", type="text", class="Contact-contactInput", required)
+
 				label(class="Contact-label") correo electrónico
 				input(id="email", name="email", type="email", class="Contact-contactInput",  required)
 				label(class="Contact-label") contraseña
 				input(id="passRegister", name="passRegister", type="password", maxlength="10", class="Contact-contactInput",  required)
+				label(class="Contact-label") Concurso
+				select(class="Contact-contactInput")
+					option(class="Contact-option") 1
+					option(class="Contact-option") 2
+					option(class="Contact-option") 3
+					option(class="Contact-option") 4
 				//- label(class="Contact-label") confirmar contraseña
 				//- input(id="passConfirmation", name="passConfirmation", type="password", maxlength="10,class="Contact-contactInput",  required)
 				label(class="Contact-label") teléfono
